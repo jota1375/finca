@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/miscripts.js"></script>  
+        <title>Reto3 App-Fincas</title>
+        <link rel="stylesheet" href="./js/css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Permanent+Marker&family=Righteous&display=swap" rel="stylesheet"> 
+            <script src="https://kit.fontawesome.com/8bb32c9f04.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    </head>
+    
+    <body>
+            <header class="header">
+                <img class="header__img" src="./js/css/img/—Pngtree—small house home game button_5319706.png" alt="">
+                <div class="header__menu">
+                    <div class="header__menu--profile">
+                        <img src="./js/css/img/icons8-nombre-48.png" alt="User">
+                        <p>Perfil</p>
+                    </div>
+                    <ul>
+                        <li><a href="#">Cuenta</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </header>
+    
+            <div class="container_Uno">
+                <h2 class="titulo_container">APP-FINCA.COM</h2>
+                <P class="subtitulo_container">La mejor elección en alquiler de casas de descanso</P>
+            </div>
+    
+            <div class="Carousel_container_div">
+                <section class="Carousel_container">
+    
+                    <h2 class="Carousel_texth2">Estamos a nivel nacional</h2>
+                    <div class="content-all">
+                        <div class="content-carrousel">
+                            <figure><img src="./js/css/img/finca1.jpg"></figure>
+                            <figure><img src="./js/css/img/finca2.jpg"></figure>
+                            <figure><img src="./js/css/img/finca3.jpg"></figure>
+                            <figure><img src="./js/css/img/finca4.jpg"></figure>
+                            <figure><img src="./js/css/img/finca5.jpg"></figure>
+                            <figure><img src="./js/css/img/finca6.jpg"></figure>
+                            <figure><img src="./js/css/img/finca1a.jpg"></figure>
+                            <figure><img src="./js/css/img/finca8.jpg"></figure>
+                            <figure><img src="./js/css/img/finca9.jpg"></figure>
+                            <figure><img src="./js/css/img/finca10.jpg"></figure>
+                        </div>
+                    </div>
+    
+                </section>
+            </div>
+
+        <div class="Container_Mision">
+    
+            <h1 class="Container_Mision_h1">#MisiónTic 2022</h1>
+    
+                <div class="container_no_autenticado">
+                    Para inciar sesión con Github: <a href="/oauth2/authorization/github">Click aqui</a>
+                </div>
+    
+            <div class="container_autenticado" style="display: none;">
+                Autenticado como <span id="user"> </span>
+                <div>
+                    <button class="btn btn-primary" onClick="logout()"> Logout </button>
+                </div>
+            </div>
+        </div>
+
+<!--
+        <h1> Categorias</h1>
+    <div id="resultadoCategoria"></div>
+    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+    
+    <div>
+        <input type="text" id="categoriaName" placeholder="name">
+        <input type="text" id="categoriaDescription" placeholder="description">
+
+        
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+-->
+
+
+        <div class="Categorias_container_box">
+            <section class="Categorias_container">
+    
+                <div class="Categorias_div_box">
+    
+                        <h1 class="Text_categoria"> Categorias <i class="far fa-window-restore"></i></h1>
+    
+                    <div class="resultado_box_categoria">    
+    
+                        <div id="resultadoCategoria"></div>
+                            <button class="button_Consultar_categoria" onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+                    </div>
+    
+                    <div class="div_form_input_categoria">
+                        <form class="form_input">
+                            <input class="input_type_categoria" type="text" id="categoriaName" placeholder="name">
+                            <input class="input_type_categoria" type="text" id="categoriaDescription" placeholder="description">
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="button_btn_categoria">
+                    <button class="button_Guardar_categoria" onclick="guardarInformacionCategorias()">Guardar</button>
+                    
+                </div>  
+    
+            </section>
+        </div>
+    
+<!--
+        <h1> Finca</h1>
+        <div id="resultadoFarm"></div>
+        <button onclick="traerInformacionFinca()"> Consultar Finca</button>
+        
+        <div>
+            <input type="text" id="farmName" placeholder="name">
+            <input type="text" id="farmAddress" placeholder="address">
+            <input type="number" id="farmExtension" placeholder="extension">
+            <input type="text" id="farmDescription" placeholder="description">    
+        </div>
+        <button onclick="guardarInformacionFinca()">Guardar Finca</button>
+-->
+
+
+
+        <div class="Categorias_container_box_finca">
+            <section class="Categorias_container_finca">
+                <div class="Categorias_div_box_finca">
+    
+                    <div class="Categorias_div_box-finca">
+    
+                        <h1 class="Text_categoria_finca"> Finca <i class="fas fa-house-user"></i></h1>
+    
+                        <div class="resultado_box_finca">
+                            <div id="resultadoFarm"></div>
+    
+                            <button class="button_Consultar_finca" onclick="traerInformacionFinca()"> Consultar Finca</button>
+                        </div>
+    
+                        <div class="div_form_input_finca">
+                            <form class="form_input_finca">
+                                <input class="input_type_finca" type="text" id="farmName" placeholder="name">
+                                <input class="input_type_finca" type="text" id="farmAddress" placeholder="address">
+                                <input class="input_type_finca" type="number" id="farmExtension" placeholder="extension">
+                                <input class="input_type_finca" type="text" id="farmDescription" placeholder="description">    
+                            </form>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="button_Guardar_finca_box">
+                            <button class="button_Guardar_finca" onclick="guardarInformacionFinca()">Guardar</button>
+                            
+                        </div>
+                </div>  
+            </section>
+        </div>
+
+
+
+<!--
+    <h1> Clientes</h1>
+    <div id="resultadoClientes"></div>
+    <button onclick="traerInformacionClientes()" > Consultar Clientes</button>
+    
+    <div>
+        <input type="text" id="clienteEmail" placeholder="email">
+        <input type="text" id="clientePassword" placeholder="password">
+        <input type="text" id="clienteName" placeholder="name">
+        <input type="number" id="clienteAge" placeholder="age">  
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+-->
+
+
+    <div class="Categorias_container_box_clientes">
+        <section class="Categorias_container_clientes">
+
+            <div class="Categorias_div_box_clientes">
+
+                <h1 class="Text_categoria_clientes"> Clientes <i class="fas fa-users"></i></h1>
+
+                    <div class="resultado_box_clientes"> 
+
+                        <div id="resultadoClientes"></div>
+
+                            <button class="button_Consultar_clientes" onclick="traerInformacionClientes()" > Consultar Clientes</button>
+                    </div>
+
+                    <div class="div_form_input_clientes">
+                        <form class="form_input_clientes">
+                            <input class="input_type_clientes" type="text" id="ClienteEmail" placeholder="email">
+                            <input class="input_type_clientes" type="text" id="ClientePassword" placeholder="password">
+                            <input class="input_type_clientes" type="text" id="ClienteName" placeholder="name">
+                            <input class="input_type_clientes" type="number" id="ClienteAge" placeholder="age">  
+                        </form>
+                    </div>
+
+            </div>
+                    <div class="button_btn_clientes">
+                        <button class="button_Guardar_clientes" onclick="guardarInformacionClientes()">Guardar</button>
+                
+                    </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- ------------MENSAJES---------------- -->
+    <!--<h1> Mensajes</h1>
+    <div id="resultadoMensaje"></div>
+    <button onclick="traerInformacionMensajes()" > Consultar Mensajes</button>
+    
+    <div>
+        <input type="text" id="messageText" placeholder="messaagetext"> 
+    </div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+-->
+
+
+    <div class="Categorias_container_box_mensaje">
+        <section class="Categorias_container_mensaje">
+
+            <section class="Categorias_div_box_mensaje">
+
+                <h1 class="Text_categoria_mensaje"> Mensajes <i class="fas fa-envelope-open-text"></i></h1>
+
+                <div class="resultado_box_mensaje"> 
+
+                    <div id="resultadoMensajes"></div>
+
+                        <button class="button_consultar_mensaje" onclick="traerInformacionMensajes()" > Consultar Mensajes</button>
+                    </div>
+
+                    <div class="div_form_input_mensaje">
+
+                        <form class="form_input_mensaje">
+                            <input class="input_type_mensaje" type="text" id="messageText" placeholder="messaagetext"> 
+                        </form>
+
+                    </div>
+
+                    <div class="button_btn">
+                        <button class="button_Guardar_mensaje" onclick="guardarInformacionMensajes()">Guardar</button>
+                        
+                    </div>
+            </section>
+    </div>
+
+
+
+
+    <!-- ------------RESERVACION--------------- -->
+    <!--
+    <h1> Reservacion</h1>
+    <div id="resultadoReservacion"></div>
+    <button onclick="traerInformacionReservacion()" > Consultar Rservacion</button>
+    
+    <div>
+        <input type="date" id="startDate" placeholder="startDate">
+        <input type="date" id="devolutionDate" placeholder="devolutionDate">
+        
+    </div>
+    <button onclick="guardarInformacionReservacion()">Guardar Rservacion</button>
+-->
+
+
+    <div class="Categorias_container_box_reserva">
+        <section class="Categorias_container_reserva">
+
+            <section class="Categorias_div_box_reserva">
+
+                <h1 class="Text_categoria_reserva"> Reservación <i class="fas fa-key"></i></h1>
+
+                <div class="resultado_box_reserva"> 
+
+                    <div id="resultadoReservacion"></div>
+
+                        <button class="button_consultar_reserva" onclick="traerInformacionReservacion()" > Consultar Reservacion</button>
+                    </div>
+
+                    <div class="div_form_input_reserva">
+
+                        <form class="form_input_reserva">
+                            <input class="input_type_reserva" type="date" id="startDate" placeholder="startDate">
+                            <input class="input_type_reserva" type="date" id="devolutionDate" placeholder="devolutionDate">
+                        </form>
+
+                    </div>
+
+                    <div class="button_btn_reserva">
+                        <button class="button_Guardar_reserva" onclick="guardarInformacionMensajes()">Guardar</button>
+            
+                    </div>
+            </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"> </script>
+    <script type="text/javascript">
+        $.ajaxSetup({
+                beforeSend : function(xhr, settings) {
+                    if (settings.type == 'POST' || settings.type == 'PUT'
+                        || settings.type == 'DELETE') {
+                    if (!(/^http:.*/.test(settings.url) || /^https:.*/
+                        .test(settings.url))) {
+                      // Only send the token to relative URLs i.e. locally.
+                        xhr.setRequestHeader("X-XSRF-TOKEN",
+                            Cookies.get('XSRF-TOKEN'));
+                        }
+                    }
+                }
+                });
+
+        $.get('/user',function(data){
+            $('#user').html(data.name);
+            $('.noautenticado').hide();
+            $('.autenticado').show();
+        });
+        var logout = function() {
+            $.post("/logout", function() {
+                $("#user").html('');
+                $(".noautenticado").show();
+                $(".autenticado").hide();
+            })
+            return true;
+        }
+    
+    </script>
+
+<div class="footer">
+    <div class="copy">
+        <p class="par">Copyright Grupo G-15 Mision Tic 2022</p>
+    </div>
+
+    <div class="submenu">
+        <ul class="submenu1">
+        <li><a href="#">Contactenos</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Cotizaciones</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
